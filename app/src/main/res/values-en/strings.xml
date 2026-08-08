@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spanish Enabler</string>
+    <string name="title">Spanish for RealmeUI</string>
+    <string name="subtitle">Change the system language with ROOT access</string>
+    <string name="root_checking">Requesting ROOT access…</string>
+    <string name="root_granted">ROOT access granted</string>
+    <string name="root_denied">ROOT access denied</string>
+    <string name="runtime_locale">Active language</string>
+    <string name="stored_locale">Language after reboot</string>
+    <string name="default_locale">ROM default language</string>
+    <string name="unknown">Unknown</string>
+    <string name="enable_spanish">Enable Spanish</string>
+    <string name="restore_default">Restore default language</string>
+    <string name="reboot_phone">Reboot phone</string>
+    <string name="notice">The app first attempts an immediate language switch. If the system blocks it, the setting is saved for the next reboot. Missing ROM translations may fall back to Chinese or English.</string>
+    <string name="confirm_spanish_title">Enable Spanish?</string>
+    <string name="confirm_spanish_message">The current user language will be set to es-ES.</string>
+    <string name="confirm_restore_title">Restore the default language?</string>
+    <string name="confirm_restore_message">The ROM default language will be restored: %1$s</string>
+    <string name="confirm_reboot_title">Reboot the phone?</string>
+    <string name="confirm_reboot_message">Unsaved work in other apps may be lost.</string>
+    <string name="write_success">Saved %1$s. Reboot to apply.</string>
+    <string name="apply_success">Switched immediately to %1$s.</string>
+    <string name="write_failed">Operation failed: %1$s</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="retry">Retry</string>
+    <string name="root_help">Allow this app in Magisk, KernelSU, or APatch, then retry.</string>
+    <string name="developer_credit">开发者：大侠阿木（daxiaamu.com）</string>
+</resources>

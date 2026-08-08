@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">西班牙语切换器</string>
+    <string name="title">RealmeUI 西班牙语</string>
+    <string name="subtitle">通过 ROOT 权限切换系统语言</string>
+    <string name="root_checking">正在申请 ROOT 权限…</string>
+    <string name="root_granted">ROOT 已授权</string>
+    <string name="root_denied">未获得 ROOT 权限</string>
+    <string name="runtime_locale">当前运行语言</string>
+    <string name="stored_locale">重启后语言</string>
+    <string name="default_locale">ROM 默认语言</string>
+    <string name="unknown">未知</string>
+    <string name="enable_spanish">开启西班牙语</string>
+    <string name="restore_default">恢复默认语言</string>
+    <string name="reboot_phone">重启手机</string>
+    <string name="notice">应用会优先即时切换语言；若系统阻止即时刷新，则写入设置并在重启后生效。如果 ROM 已裁掉西班牙语翻译，缺失部分会回退到中文或英文。</string>
+    <string name="confirm_spanish_title">开启西班牙语？</string>
+    <string name="confirm_spanish_message">将把当前用户的系统语言设置为 es-ES。</string>
+    <string name="confirm_restore_title">恢复默认语言？</string>
+    <string name="confirm_restore_message">将恢复为 ROM 默认语言：%1$s</string>
+    <string name="confirm_reboot_title">重启手机？</string>
+    <string name="confirm_reboot_message">其他应用中未保存的内容可能丢失。</string>
+    <string name="write_success">已写入 %1$s，请重启生效。</string>
+    <string name="apply_success">已即时切换为 %1$s。</string>
+    <string name="write_failed">操作失败：%1$s</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="retry">重试</string>
+    <string name="root_help">请在 Magisk、KernelSU 或 APatch 中允许本应用的超级用户请求，然后重试。</string>
+    <string name="developer_credit">开发者：大侠阿木（daxiaamu.com）</string>
+</resources>
