@@ -176,7 +176,7 @@ public final class LanguageActivity extends Activity {
         statusLayout.setMargins(dp(12), 0, 0, 0);
         statusRow.addView(guideStatus, statusLayout);
         content.addView(statusRow, spaced());
-        return scroll;
+        return pageWithTopBar(scroll);
     }
 
     private void addAuthorizationChoice(LinearLayout parent, int titleRes, int descriptionRes,
@@ -232,7 +232,23 @@ public final class LanguageActivity extends Activity {
         noticeLayout.setMargins(0, dp(18), 0, 0);
         content.addView(notice, noticeLayout);
         setButtons(false);
-        return scroll;
+        return pageWithTopBar(scroll);
+    }
+
+    private View pageWithTopBar(ScrollView scroll) {
+        LinearLayout page = new LinearLayout(this);
+        page.setOrientation(LinearLayout.VERTICAL);
+        page.setBackgroundColor(getColor(R.color.surface));
+
+        TextView appBar = label(getString(R.string.app_name), 20, android.R.color.white);
+        appBar.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
+        appBar.setGravity(Gravity.CENTER_VERTICAL);
+        appBar.setPadding(dp(20), 0, dp(20), 0);
+        appBar.setBackgroundColor(getColor(R.color.accent));
+        appBar.setElevation(dp(4));
+        page.addView(appBar, new LinearLayout.LayoutParams(-1, dp(56)));
+        page.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1f));
+        return page;
     }
 
     private ScrollView baseScroll() {
@@ -245,7 +261,7 @@ public final class LanguageActivity extends Activity {
     private LinearLayout baseContent(ScrollView scroll) {
         LinearLayout content = new LinearLayout(this);
         content.setOrientation(LinearLayout.VERTICAL);
-        content.setPadding(dp(24), dp(38), dp(24), dp(24));
+        content.setPadding(dp(24), dp(24), dp(24), dp(24));
         scroll.addView(content);
         return content;
     }
