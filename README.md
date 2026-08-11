@@ -48,8 +48,8 @@ settings --user current put system system_locales es-ES
 
 ## 已验证设备
 
-- OnePlus 15
-- Android 16 / ColorOS 16.1
+- 真我 GT 8
+- RealmeUI 7.0
 
 实测 `zh-CN → es-ES` 和 `es-ES → zh-CN` 均可在不重启的情况下即时生效。
 
@@ -58,4 +58,3 @@ settings --user current put system system_locales es-ES
 切换系统语言属于高权限操作。请确认设备已备份重要数据，并只从本仓库下载 APK。
 
 开发者：大侠阿木（[daxiaamu.com](https://daxiaamu.com)）
-
