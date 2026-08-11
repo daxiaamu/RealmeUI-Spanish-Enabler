@@ -2,10 +2,35 @@
 <resources>
     <string name="app_name">Selector de español</string>
     <string name="title">Español para RealmeUI</string>
-    <string name="subtitle">Cambia el idioma del sistema con acceso ROOT</string>
-    <string name="root_checking">Solicitando acceso ROOT…</string>
-    <string name="root_granted">Acceso ROOT concedido</string>
+    <string name="subtitle">Cambia el idioma; toca el estado de autorización para elegir de nuevo</string>
+    <string name="guide_title">Elegir autorización</string>
+    <string name="guide_subtitle">Elige un servicio de permisos la primera vez. La selección se recordará tras autorizar.</string>
+    <string name="choose_root">Usar ROOT</string>
+    <string name="root_description">Para Magisk, KernelSU o APatch. La aplicación solicitará acceso de superusuario.</string>
+    <string name="choose_shizuku">Usar Shizuku</string>
+    <string name="shizuku_description">No requiere ROOT. Inicia Shizuku y permite el acceso a esta aplicación.</string>
+    <string name="choose_axmanager">Usar AxManager</string>
+    <string name="axmanager_description">No requiere ROOT. Inicia AxManager y activa “AX-Permission Intercept”.</string>
+    <string name="choose_authorization">Elige un método de autorización</string>
+    <string name="authorization_checking">Comprobando autorización…</string>
+    <string name="authorization_waiting">Esperando el servicio de permisos</string>
+    <string name="authorization_failed">Falló la autorización. Inténtalo de nuevo.</string>
+    <string name="authorization_connected">Autorización: %1$s (conectado)</string>
+    <string name="authorization_disconnected">Autorización: %1$s (desconectado; toca para cambiar)</string>
+    <string name="mode_root">ROOT</string>
+    <string name="mode_shizuku">Shizuku</string>
+    <string name="mode_axmanager">AxManager</string>
     <string name="root_denied">Acceso ROOT denegado</string>
+    <string name="root_help">Permite esta aplicación en Magisk, KernelSU o APatch y vuelve a intentarlo.</string>
+    <string name="shizuku_not_running_title">Shizuku no está conectado</string>
+    <string name="shizuku_not_running_message">Instala e inicia Shizuku, vuelve a esta aplicación e inténtalo de nuevo.</string>
+    <string name="axmanager_not_running_title">AxManager no está conectado</string>
+    <string name="axmanager_not_running_message">Inicia el servicio y activa “AX-Permission Intercept” en AxManager; vuelve e inténtalo de nuevo.</string>
+    <string name="open_shizuku">Abrir Shizuku</string>
+    <string name="open_axmanager">Abrir AxManager</string>
+    <string name="manager_not_installed">No se encontró la aplicación de permisos</string>
+    <string name="permission_denied">Solicitud de permiso denegada</string>
+    <string name="invalid_service">La conexión del servicio de permisos no es válida</string>
     <string name="runtime_locale">Idioma en uso</string>
     <string name="stored_locale">Idioma tras reiniciar</string>
     <string name="default_locale">Idioma predeterminado de la ROM</string>
@@ -26,6 +51,5 @@
     <string name="cancel">Cancelar</string>
     <string name="confirm">Confirmar</string>
     <string name="retry">Reintentar</string>
-    <string name="root_help">Permite esta aplicación en Magisk, KernelSU o APatch y vuelve a intentarlo.</string>
-    <string name="developer_credit">开发者：大侠阿木（daxiaamu.com）</string>
+    <string name="developer_credit">开发者：大侠阿木（daxiaamu.com）。</string>
 </resources>
