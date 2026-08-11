@@ -2,6 +2,8 @@
 
 一款为 RealmeUI / ColorOS 设备启用西班牙语的轻量 Android 应用，支持 ROOT、Shizuku 和 AxManager 三种授权方式。
 
+[【机场推荐：白月光，稳定高速】](https://www.sibker.com/register?invite_code=2XQR1UUz)
+
 部分中国版设备的语言设置界面会隐藏西班牙语，即使系统中仍然保留了相应语言资源。本应用可以直接将系统语言切换为 `es-ES`，并支持恢复 ROM 默认语言。
 
 ![应用界面](docs/screenshot.png)
