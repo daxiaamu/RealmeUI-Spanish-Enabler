@@ -14,6 +14,7 @@ import android.os.LocaleList;
 import android.os.RemoteException;
 import android.view.Gravity;
 import android.view.View;
+import android.view.WindowInsets;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -108,7 +109,7 @@ public final class LanguageActivity extends Activity {
                 new ComponentName(getPackageName(), LocaleUserService.class.getName()))
                 .daemon(false)
                 .processNameSuffix("locale")
-                .version(3);
+                .version(5);
 
         currentMode = getSharedPreferences(PREFS, MODE_PRIVATE).getString(PREF_MODE, null);
         if (isMode(currentMode)) {
@@ -243,10 +244,24 @@ public final class LanguageActivity extends Activity {
         TextView appBar = label(getString(R.string.app_name), 20, android.R.color.white);
         appBar.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
         appBar.setGravity(Gravity.CENTER_VERTICAL);
+        int appBarHeight = dp(56);
         appBar.setPadding(dp(20), 0, dp(20), 0);
         appBar.setBackgroundColor(getColor(R.color.accent));
         appBar.setElevation(dp(4));
-        page.addView(appBar, new LinearLayout.LayoutParams(-1, dp(56)));
+        LinearLayout.LayoutParams appBarParams = new LinearLayout.LayoutParams(-1, appBarHeight);
+        page.addView(appBar, appBarParams);
+        page.setOnApplyWindowInsetsListener((view, insets) -> {
+            int statusBarHeight;
+            if (android.os.Build.VERSION.SDK_INT >= 30) {
+                statusBarHeight = insets.getInsets(WindowInsets.Type.statusBars()).top;
+            } else {
+                statusBarHeight = insets.getSystemWindowInsetTop();
+            }
+            appBar.setPadding(dp(20), statusBarHeight, dp(20), 0);
+            appBarParams.height = appBarHeight + statusBarHeight;
+            appBar.setLayoutParams(appBarParams);
+            return insets;
+        });
         page.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1f));
         return page;
     }
